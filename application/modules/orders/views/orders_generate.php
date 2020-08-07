@@ -1,11 +1,3 @@
-<?php
-
-// pre($data);
-// exit;
-?>
-
-
-
 <div class="wrapper wrapper-content animated fadeInRight">
     <form id="form_orders_dispatch"  action="javascript:;" method="POST">
             <div class="row">
