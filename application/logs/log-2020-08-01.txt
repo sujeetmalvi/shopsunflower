@@ -1,0 +1,26 @@
+ERROR - 2020-08-01 15:52:54 --> Severity: Notice --> Trying to get property of non-object /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/webservice/models/Webservice_model.php 436
+ERROR - 2020-08-01 15:52:54 --> Query error: Column 'ProductId' cannot be null - Invalid query: INSERT INTO `UsersCart` (`DesigneCode`, `UserId`, `OrderQuantity`, `ProductId`, `ColourId`, `SizeId`, `Price`, `OrderType`, `CreatedDateTime`) VALUES ('DS-101', '3', '1', NULL, '13', '', '', '2', '2020-08-01 15:52:54')
+ERROR - 2020-08-01 15:55:06 --> Severity: Notice --> Undefined offset: 1 /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/productstock/models/Productstock_model.php 648
+ERROR - 2020-08-01 15:55:06 --> Severity: Notice --> Undefined offset: 2 /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/productstock/models/Productstock_model.php 649
+ERROR - 2020-08-01 16:35:21 --> Severity: Notice --> Trying to get property of non-object /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/webservice/models/Webservice_model.php 436
+ERROR - 2020-08-01 21:34:31 --> Severity: Notice --> Undefined offset: 1 /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/productstock/models/Productstock_model.php 648
+ERROR - 2020-08-01 21:34:31 --> Severity: Notice --> Undefined offset: 2 /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/productstock/models/Productstock_model.php 649
+ERROR - 2020-08-01 23:25:53 --> Query error: Unknown column 'ProductMaster.CategoryId' in 'where clause' - Invalid query: SELECT ProductMaster.id as ProductId,ProductName,ProductPrice,ProductThumbnail,DesigneCode,CategoryName,CategoryId,ColourName,ProductMaster.ColourId,SizeCode,ProductMaster.SizeId,IsOffer, OfferPrice,IsPreOrder 
+            FROM `ProductMaster` 
+            LEFT JOIN ColourMaster ON ProductMaster.ColourId = ColourMaster.id
+            LEFT JOIN SizeMaster ON ProductMaster.SizeId = SizeMaster.id
+            LEFT JOIN CategoryMaster ON CategoryMaster.id = ProductMaster.CategoryId 
+            WHERE VisibleStatus='1' AND (`CategoryName` LIKE '%DS-101%' OR `DesigneCode` LIKE '%DS-101%' OR `ProductMaster.CategoryId` LIKE '%DS-101%' )       LIMIT 0,3
+ERROR - 2020-08-01 23:26:02 --> Severity: Notice --> Trying to get property of non-object /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/webservice/models/Webservice_model.php 436
+ERROR - 2020-08-01 23:26:06 --> Query error: Unknown column 'ProductMaster.CategoryId' in 'where clause' - Invalid query: SELECT ProductMaster.id as ProductId,ProductName,ProductPrice,ProductThumbnail,DesigneCode,CategoryName,CategoryId,ColourName,ProductMaster.ColourId,SizeCode,ProductMaster.SizeId,IsOffer, OfferPrice,IsPreOrder 
+            FROM `ProductMaster` 
+            LEFT JOIN ColourMaster ON ProductMaster.ColourId = ColourMaster.id
+            LEFT JOIN SizeMaster ON ProductMaster.SizeId = SizeMaster.id
+            LEFT JOIN CategoryMaster ON CategoryMaster.id = ProductMaster.CategoryId 
+            WHERE VisibleStatus='1' AND (`CategoryName` LIKE '%Drape saree%' OR `DesigneCode` LIKE '%Drape saree%' OR `ProductMaster.CategoryId` LIKE '%Drape saree%' )       LIMIT 0,10
+ERROR - 2020-08-01 23:26:26 --> Query error: Unknown column 'CategoryMaster.id' in 'where clause' - Invalid query: SELECT ProductMaster.id as ProductId,ProductName,ProductPrice,ProductThumbnail,DesigneCode,CategoryName,CategoryId,ColourName,ProductMaster.ColourId,SizeCode,ProductMaster.SizeId,IsOffer, OfferPrice,IsPreOrder 
+            FROM `ProductMaster` 
+            LEFT JOIN ColourMaster ON ProductMaster.ColourId = ColourMaster.id
+            LEFT JOIN SizeMaster ON ProductMaster.SizeId = SizeMaster.id
+            LEFT JOIN CategoryMaster ON CategoryMaster.id = ProductMaster.CategoryId 
+            WHERE VisibleStatus='1' AND (`CategoryName` LIKE '%DS-101%' OR `DesigneCode` LIKE '%DS-101%' OR `CategoryMaster.id` LIKE '%DS-101%' )       LIMIT 0,3

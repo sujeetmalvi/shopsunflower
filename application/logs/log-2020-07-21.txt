@@ -1,0 +1,3 @@
+ERROR - 2020-07-21 20:12:15 --> Severity: Notice --> Trying to get property of non-object /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/webservice/models/Webservice_model.php 434
+ERROR - 2020-07-21 20:12:40 --> Severity: Notice --> Trying to get property of non-object /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/webservice/models/Webservice_model.php 434
+ERROR - 2020-07-21 20:12:40 --> Query error: Column 'DesigneCode' cannot be null - Invalid query: INSERT INTO `UsersCart` (`DesigneCode`, `UserId`, `OrderQuantity`, `ProductId`, `ColourId`, `SizeId`, `Price`, `OrderType`, `CreatedDateTime`) VALUES (NULL, '', '', NULL, '', '', '', '', '2020-07-21 20:12:40')

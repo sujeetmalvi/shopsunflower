@@ -1,0 +1,12 @@
+ERROR - 2020-07-24 08:55:36 --> Severity: Notice --> Trying to get property of non-object /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/webservice/models/Webservice_model.php 434
+ERROR - 2020-07-24 08:55:50 --> Severity: Notice --> Trying to get property of non-object /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/webservice/models/Webservice_model.php 434
+ERROR - 2020-07-24 08:55:54 --> Severity: Notice --> Trying to get property of non-object /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/webservice/models/Webservice_model.php 434
+ERROR - 2020-07-24 08:56:08 --> Severity: Notice --> Trying to get property of non-object /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/webservice/models/Webservice_model.php 434
+ERROR - 2020-07-24 09:08:16 --> Severity: Notice --> Trying to get property of non-object /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/webservice/models/Webservice_model.php 434
+ERROR - 2020-07-24 09:10:51 --> Severity: Notice --> Trying to get property of non-object /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/webservice/models/Webservice_model.php 434
+ERROR - 2020-07-24 23:12:43 --> Severity: Warning --> Illegal string offset 'OrderId' /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/orders/views/orders_generate.php 28
+ERROR - 2020-07-24 23:12:44 --> Severity: Warning --> Illegal string offset 'OrderedDateTime' /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/orders/views/orders_generate.php 29
+ERROR - 2020-07-24 23:12:44 --> Severity: Notice --> Undefined variable: OrderId /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/orders/views/orders_generate.php 96
+ERROR - 2020-07-24 23:12:44 --> Severity: Notice --> Undefined variable: UserId /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/orders/views/orders_generate.php 97
+ERROR - 2020-07-24 23:31:16 --> Severity: Notice --> Undefined variable: OrderId /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/orders/views/orders_generate.php 96
+ERROR - 2020-07-24 23:31:16 --> Severity: Notice --> Undefined variable: UserId /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/orders/views/orders_generate.php 97

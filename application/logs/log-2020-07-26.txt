@@ -1,0 +1,72 @@
+ERROR - 2020-07-26 03:48:24 --> Severity: Notice --> Undefined index: user_id /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/orders/models/Orders_model.php 12
+ERROR - 2020-07-26 03:53:12 --> Severity: Notice --> Undefined index: user_id /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/orders/models/Orders_model.php 12
+ERROR - 2020-07-26 11:20:40 --> Severity: Notice --> Undefined property: CI::$user_model /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/system/core/Model.php 77
+ERROR - 2020-07-26 11:20:40 --> Severity: error --> Exception: Call to a member function get_user_details_by_id() on null /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/orders/models/Orders_model.php 859
+ERROR - 2020-07-26 11:20:50 --> Severity: Notice --> Undefined property: CI::$user_model /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/system/core/Model.php 77
+ERROR - 2020-07-26 11:20:50 --> Severity: error --> Exception: Call to a member function get_user_details_by_id() on null /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/orders/models/Orders_model.php 859
+ERROR - 2020-07-26 12:06:30 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY ProductOrders.id DESC' at line 11 - Invalid query: SELECT 
+                ProductOrders.*,ProductMaster.ColourId,
+                ProductMaster.DesigneCode,ProductMaster.ProductThumbnail,
+                ColourMaster.ColourName,
+                SizeMaster.SizeName,
+                date_format(ProductOrders.OrderedDateTime,'%d-%m-%Y %H:%i:%s') as CreatedDateTime 
+                FROM ProductOrders 
+                INNER JOIN ProductMaster ON ProductMaster.id=ProductOrders.ProductId 
+                INNER JOIN ColourMaster ON ColourMaster.id=ProductMaster.ColourId 
+                INNER JOIN SizeMaster ON SizeMaster.id=ProductMaster.SizeId 
+                WHERE   ORDER BY ProductOrders.id DESC
+ERROR - 2020-07-26 12:08:36 --> Severity: Notice --> Undefined variable: OrderId /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/orders/views/orders_generate.php 99
+ERROR - 2020-07-26 12:08:36 --> Severity: Notice --> Undefined variable: UserId /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/orders/views/orders_generate.php 100
+ERROR - 2020-07-26 12:39:24 --> Severity: Warning --> mysqli::query(): (21000/1242): Subquery returns more than 1 row /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/system/database/drivers/mysqli/mysqli_driver.php 305
+ERROR - 2020-07-26 12:39:24 --> Query error: Subquery returns more than 1 row - Invalid query: SELECT 
+                ProductOrders.*,ProductMaster.ColourId,
+                ProductMaster.DesigneCode,ProductMaster.ProductThumbnail,
+                ColourMaster.ColourName,
+                SizeMaster.SizeName,
+                ( 
+                    SELECT ProductUIC FROM DispatchHistory 
+                    WHERE DispatchHistory.OrderId=ProductOrders.OrderId 
+                    	AND DispatchHistory.ProductId=ProductOrders.ProductId 
+                    	AND DispatchHistory.DesigneCode=ProductOrders.DesigneCode 
+                    	AND DispatchHistory.SizeId=ProductOrders.SizeId
+                    	AND DispatchHistory.ColourId=ProductOrders.ColourId
+                    	AND DispatchHistory.OrderType=ProductOrders.OrderType) as DispatcProductUIC,
+                date_format(ProductOrders.OrderedDateTime,'%d-%m-%Y %H:%i:%s') as CreatedDateTime 
+                FROM ProductOrders 
+                INNER JOIN ProductMaster ON ProductMaster.id=ProductOrders.ProductId 
+                INNER JOIN ColourMaster ON ColourMaster.id=ProductMaster.ColourId 
+                INNER JOIN SizeMaster ON SizeMaster.id=ProductMaster.SizeId 
+                WHERE   ProductOrders.id IN(53) ORDER BY ProductOrders.id DESC
+ERROR - 2020-07-26 13:54:12 --> Severity: Warning --> Invalid argument supplied for foreach() /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/orders/controllers/Orders.php 126
+ERROR - 2020-07-26 13:57:25 --> Severity: Notice --> Array to string conversion /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/orders/controllers/Orders.php 126
+ERROR - 2020-07-26 18:57:57 --> Severity: Notice --> Undefined index: ShopStartTime /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/webservice/models/Webservice_model.php 39
+ERROR - 2020-07-26 18:57:57 --> Severity: Notice --> Undefined index: ShopEndTime /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/webservice/models/Webservice_model.php 39
+ERROR - 2020-07-26 19:04:29 --> Severity: Notice --> Undefined variable: shopdatas /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/webservice/models/Webservice_model.php 40
+ERROR - 2020-07-26 19:04:29 --> Severity: Warning --> Invalid argument supplied for foreach() /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/webservice/models/Webservice_model.php 40
+ERROR - 2020-07-26 19:04:29 --> Severity: Notice --> Undefined variable: shopdata /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/webservice/models/Webservice_model.php 43
+ERROR - 2020-07-26 19:04:29 --> Severity: Notice --> Undefined variable: shopdata /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/webservice/models/Webservice_model.php 43
+ERROR - 2020-07-26 19:04:29 --> Severity: Notice --> Undefined index: ShopStatus /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/webservice/models/Webservice_model.php 58
+ERROR - 2020-07-26 20:22:57 --> Severity: Notice --> Array to string conversion /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/orders/controllers/Orders.php 216
+ERROR - 2020-07-26 20:23:03 --> Severity: Notice --> Array to string conversion /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/orders/controllers/Orders.php 216
+ERROR - 2020-07-26 20:37:14 --> Severity: error --> Exception: syntax error, unexpected 'public' (T_PUBLIC) /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/orders/controllers/Orders.php 204
+ERROR - 2020-07-26 21:31:20 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 - Invalid query: UPDATE ProductStock SET OrderId='1595779280' WHERE ProductUIC IN()
+ERROR - 2020-07-26 21:33:08 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 - Invalid query: UPDATE ProductStock SET OrderId='1595779388' WHERE ProductUIC IN()
+ERROR - 2020-07-26 21:36:21 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 - Invalid query: UPDATE ProductStock SET OrderId='1595779581' WHERE ProductUIC IN()
+ERROR - 2020-07-26 21:41:23 --> Severity: Notice --> Undefined variable: OrderId /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/orders/views/orders_generate.php 105
+ERROR - 2020-07-26 21:41:23 --> Severity: Notice --> Undefined variable: UserId /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/orders/views/orders_generate.php 106
+ERROR - 2020-07-26 21:41:42 --> Severity: Notice --> Undefined variable: OrderId /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/orders/views/orders_generate.php 105
+ERROR - 2020-07-26 21:41:42 --> Severity: Notice --> Undefined variable: UserId /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/orders/views/orders_generate.php 106
+ERROR - 2020-07-26 21:41:59 --> Severity: Notice --> Undefined variable: OrderId /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/orders/views/orders_generate.php 105
+ERROR - 2020-07-26 21:41:59 --> Severity: Notice --> Undefined variable: UserId /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/orders/views/orders_generate.php 106
+ERROR - 2020-07-26 22:28:42 --> Severity: 4096 --> Object of class CI_DB_mysqli_result could not be converted to string /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/webservice/models/Webservice_model.php 739
+ERROR - 2020-07-26 22:35:45 --> Severity: error --> Exception: Call to a member function num_rows() on null /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/webservice/models/Webservice_model.php 636
+ERROR - 2020-07-26 22:36:35 --> Severity: Notice --> Array to string conversion /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/webservice/models/Webservice_model.php 741
+ERROR - 2020-07-26 22:51:31 --> Severity: Notice --> Undefined variable: OrderId /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/orders/views/orders_generate.php 105
+ERROR - 2020-07-26 22:51:31 --> Severity: Notice --> Undefined variable: UserId /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/orders/views/orders_generate.php 106
+ERROR - 2020-07-26 22:55:42 --> Severity: Notice --> Undefined variable: OrderId /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/orders/views/orders_generate.php 105
+ERROR - 2020-07-26 22:55:42 --> Severity: Notice --> Undefined variable: UserId /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/orders/views/orders_generate.php 106
+ERROR - 2020-07-26 22:56:59 --> Severity: Notice --> Undefined variable: OrderId /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/orders/views/orders_generate.php 105
+ERROR - 2020-07-26 22:56:59 --> Severity: Notice --> Undefined variable: UserId /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/orders/views/orders_generate.php 106
+ERROR - 2020-07-26 22:58:14 --> Severity: Notice --> Undefined variable: OrderId /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/orders/views/orders_generate.php 105
+ERROR - 2020-07-26 22:58:14 --> Severity: Notice --> Undefined variable: UserId /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/orders/views/orders_generate.php 106
+ERROR - 2020-07-26 23:07:19 --> Severity: Notice --> Array to string conversion /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/orders/controllers/Orders.php 417

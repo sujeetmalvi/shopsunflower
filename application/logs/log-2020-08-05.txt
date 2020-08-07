@@ -1,0 +1,4 @@
+ERROR - 2020-08-05 22:32:50 --> Severity: Notice --> Undefined variable: sql /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/orders/models/Orders_model.php 440
+ERROR - 2020-08-05 22:32:50 --> Severity: Warning --> mysqli::query(): Empty query /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/system/database/drivers/mysqli/mysqli_driver.php 305
+ERROR - 2020-08-05 22:32:50 --> Query error:  - Invalid query: 
+ERROR - 2020-08-05 23:10:53 --> Severity: Notice --> Undefined index: user_id /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/orders/models/Orders_model.php 13

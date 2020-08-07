@@ -1,0 +1,17 @@
+ERROR - 2020-07-25 22:37:59 --> Query error: Unknown column 'ProductOrders.ProductStatus' in 'field list' - Invalid query: SELECT ProductOrders.id,ProductOrders.OrderId,ProductMaster.DesigneCode,ColourMaster.ColourName,SizeMaster.SizeCode,
+        ProductOrders.OrderQuantity,ProductOrders.Price,ShopMaster.ShopName as FromName,UserMaster.FullName,
+        ProductOrders.ColourId,ProductOrders.SizeId,ProductOrders.ProductUIC,ProductOrders.OrderType,ProductOrders.ProductStatus 
+            FROM ProductOrders 
+            LEFT JOIN ProductOrdersSummary ON ProductOrdersSummary.OrderId=ProductOrders.OrderId 
+            LEFT JOIN ProductMaster ON  ProductMaster.id=ProductOrders.ProductId  
+            LEFT JOIN ColourMaster ON ColourMaster.id=ProductOrders.ColourId 
+            LEFT JOIN SizeMaster ON SizeMaster.id=ProductOrders.SizeId 
+            LEFT JOIN UserMaster ON UserMaster.id=ProductOrders.UserId 
+            LEFT JOIN ShopMaster ON ShopMaster.id=UserMaster.ShopId
+            WHERE ( ProductOrdersSummary.OrderStatus = '2')  
+            AND ProductOrders.OrderCancel ='0' AND `ProductOrders`.`OrderId`= '1595436863' 
+            ORDER BY id DESC 
+ERROR - 2020-07-25 22:39:29 --> Severity: Notice --> Undefined index: ProductStatus /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/orders/models/Orders_model.php 780
+ERROR - 2020-07-25 22:39:29 --> Severity: Notice --> Undefined index: ProductStatus /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/orders/models/Orders_model.php 780
+ERROR - 2020-07-25 23:13:16 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 - Invalid query: UPDATE ProductStock SET OrderId='1595698996' WHERE ProductUIC IN()
+ERROR - 2020-07-25 23:13:44 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 - Invalid query: UPDATE ProductStock SET OrderId='1595699024' WHERE ProductUIC IN()

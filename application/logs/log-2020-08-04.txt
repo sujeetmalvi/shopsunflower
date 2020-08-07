@@ -1,0 +1,1 @@
+ERROR - 2020-08-04 22:35:22 --> Severity: Notice --> Undefined index: user_id /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/orders/models/Orders_model.php 13

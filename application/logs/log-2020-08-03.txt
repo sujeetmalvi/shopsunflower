@@ -1,0 +1,5 @@
+ERROR - 2020-08-03 23:27:47 --> Severity: Notice --> Trying to get property of non-object /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/webservice/models/Webservice_model.php 444
+ERROR - 2020-08-03 23:27:54 --> Severity: Notice --> Trying to get property of non-object /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/webservice/models/Webservice_model.php 444
+ERROR - 2020-08-03 23:28:38 --> Severity: Notice --> Trying to get property of non-object /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/webservice/models/Webservice_model.php 444
+ERROR - 2020-08-03 23:29:11 --> Severity: Notice --> Undefined index: user_id /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/orders/models/Orders_model.php 13
+ERROR - 2020-08-03 23:29:37 --> Severity: Notice --> Undefined index: user_id /home/j91ljfq7eed0/public_html/melhortechnologies.com/devsunflower/application/modules/orders/models/Orders_model.php 13
